@@ -1,0 +1,14 @@
+.app {
+    display: flex;
+}
+
+.app-body {
+    margin-left: 3rem;
+    margin-right: 3rem;
+   
+}
+
+.app-loading {
+  text-align: center;
+  height: 10rem;
+}
