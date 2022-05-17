@@ -1,6 +1,10 @@
-.header > p {
+.header-color {
+  background-color: #343a40;
+}
+.salon-text {
   font-size: xx-large;
   font-weight: 600;
   color: white;
 }
+
 

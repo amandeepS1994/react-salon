@@ -1,0 +1,33 @@
+.card-header {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 300;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.card-text {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 400;
+  margin-top: 2rem;
+  color: gray;
+}
+
+.card-time {
+  font-size: large;
+  text-align-last: center;
+  color: gray;
+}
+
+.btn-salon {
+  background-color: white;
+  color: #1f8afc;
+  border-radius: 5px;
+  font-size: x-large;
+}
