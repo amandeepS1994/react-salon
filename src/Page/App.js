@@ -9,7 +9,7 @@ import { Col, Row} from 'react-bootstrap'
 
 function App() {
   return (
-    <div className="">
+    <>  
    <Header/>
    <Row>
       <Col xs={4}></Col>
@@ -33,7 +33,7 @@ function App() {
       
     </Row>
     </div> 
-    </div>
+    </>
   );
 
 }

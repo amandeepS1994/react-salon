@@ -1,6 +1,5 @@
 import { messageService } from '../Service/MessageService';
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import "./AppNotificationComponent.css"
 import { Alert } from 'react-bootstrap/Alert'
 
@@ -37,19 +36,19 @@ class AppNotificationComponent extends Component {
     displayMessage(success, key, message) {
         if (success) {
             return <div key={key} className="alert alert-success alert-dismissible fade show">
-            <button type="button" onClick={this.dismiss} class="btn-close" data-bs-dismiss="alert"></button>
-            <h4 class="alert-heading">Success</h4>
+            <button type="button" onClick={this.dismiss} className="btn-close" data-bs-dismiss="alert"></button>
+            <h4 className="alert-heading">Success</h4>
             <p>{message}</p>
             <hr/>
-            <p class="mb-0">Thanks you for using this Salon Service.</p>
+            <p className="mb-0">Thanks you for using this Salon Service.</p>
             </div>
         } else {    
             return <div key={key} className="alert alert-danger alert-dismissible fade show">
-            <button type="button" onClick={this.dismiss} class="btn-close" data-bs-dismiss="alert"></button>
-            <h4 class="alert-heading">Failed</h4>
+            <button type="button" onClick={this.dismiss} className="btn-close" data-bs-dismiss="alert"></button>
+            <h4 className="alert-heading">Failed</h4>
             <p>{message}</p>
             <hr/>
-            <p class="mb-0">An Error has occured.</p>
+            <p className="mb-0">An Error has occured.</p>
             </div>
         }
       
@@ -63,7 +62,7 @@ class AppNotificationComponent extends Component {
     render() {
         const { messages, success } = this.state;
         return (
-                <Router>
+              
 
                                     <div className="">
                                         {messages.map((message, index) =>
@@ -73,7 +72,7 @@ class AppNotificationComponent extends Component {
                                     </div>
                                
                             
-                </Router>
+              
             );
        
             

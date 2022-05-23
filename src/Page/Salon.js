@@ -3,6 +3,7 @@ import { salonServices as salonServiceApi} from "../Service/Api/SalonService"
 import { messageService} from "../Service/MessageService";
 import { SalonItem } from "./SalonItem";
 import { Row, Col} from 'react-bootstrap' 
+import { progressService } from '../Service/ProgressIndicator';
 
 class Salon extends Component {
     constructor(props) {
@@ -15,6 +16,7 @@ class Salon extends Component {
     }
 
     componentDidMount() {
+        progressService.startProgress(true, 50);
         salonServiceApi.availableServices().then((response) => {
             return response.json();
         }).then((data) => {
@@ -25,14 +27,17 @@ class Salon extends Component {
     }
 
     setStateInformation(data) {
+        progressService.startProgress(true, 100);
         messageService.sendMessage(true, "Retrieved Salon Services.");
         this.setState({
             successApiCall: true,
             availableServices: data?.data
         });
+        progressService.startProgress(false, 0);
     }
 
     setFailedStateInformation(error) {
+        progressService.startProgress(false, 0);
         messageService.sendMessage(false, "Failed to Retrieve Salon Services.");
         if (error) {
             console.log(error);
@@ -45,7 +50,7 @@ class Salon extends Component {
 
     displayService(services) {
         return services.map((service) => (
-            <SalonItem key={service.id} name = {service.name} description = {service.description} price = {service.price} timeInMinutes = {service.timeInMinutes}/>  
+            <SalonItem key={service.id} id={service.id} name = {service.name} description = {service.description} price = {service.price} timeInMinutes = {service.timeInMinutes}/>  
         ));
 }
 

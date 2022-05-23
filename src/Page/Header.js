@@ -8,7 +8,7 @@ function Header() {
     <Container className='ml-0 mt-2 mb-2'>
         <Navbar.Brand href="/" className='header-textt'>AR Salon & Day Spa</Navbar.Brand>
     </Container>
-  </Navbar>
+    </Navbar>
 
 
   )
