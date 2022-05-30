@@ -10,6 +10,7 @@ import Payment from './Page/Payment/Payment';
 import { stripePromise } from "./configuration/StripeConfiguration"
 import { Elements } from '@stripe/react-stripe-js';
 import  BookingConfirmation  from "./Page/Booking Confirmation/BookingConfirmation";
+import  VerifyCustomer from './Page/verify customer/VerifyCustomer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +23,7 @@ root.render(
         <Route path='/billingdetails/:slotId/:serviceId/:serviceName' element={ <BillingDetails/> }></Route>
         <Route path='/makepayment/:slotId/:serviceId/:serviceName' element={ <Payment/> }></Route>
         <Route path='/makepayment/:slotId/:serviceId/:serviceName/confirmBooking' element={ <BookingConfirmation/> }></Route>
+        <Route path='/admin/verifyuser' element={ <VerifyCustomer/> }></Route>
       
     </Routes>
      

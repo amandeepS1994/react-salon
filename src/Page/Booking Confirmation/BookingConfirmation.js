@@ -92,7 +92,7 @@ function BookingConfirmation() {
                                     <p className='booked-service-barcode-title text-center'>Take a picture of the barcode below & present to an Admin</p>
                                 </div>
                                 <div className='row'>
-                                <QRCodeSVG className='booking-qr-code' value={`http://localhost:8080/salon/ticket/51/${booking?.ticket?.id}`} />
+                                <QRCodeSVG className='booking-qr-code' value={`${booking?.ticket?.id}`} />
                                 </div>
                                
                             </div>
