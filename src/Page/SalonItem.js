@@ -1,6 +1,10 @@
 import { Button, Card } from 'react-bootstrap'
 import React from 'react'
 import "./SalonItem.css"
+import { Link } from 'react-router-dom'
+import "./SlotItem.css"
+
+
 
 export const SalonItem = ({id, name, description, price, timeInMinutes}) => {
   return (
@@ -15,7 +19,9 @@ export const SalonItem = ({id, name, description, price, timeInMinutes}) => {
                 <div className='row mb-5'>
                     <div className='col-4'></div>
                     <div className='col-4'>
-                        <Button className='btn-block btn-primary btn-salon'>Book Now</Button>
+                        <Link to={`/chooseslot/${id}/${name}`}>
+                            <Button className='btn-block btn-primary btn-salon'>Book Now</Button>
+                        </Link>
                     </div>
                     <div className='col-4'></div>
                 </div>

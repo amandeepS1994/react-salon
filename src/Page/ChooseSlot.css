@@ -1,0 +1,29 @@
+.service-title {
+  font-size: xx-large;
+  font-weight: 500;
+}
+
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  border-color: blue;
+  height: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.btn-slot {
+  height: 3rem;
+}
+
+.service-slot {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.service-slot > p {
+  font-size: x-large;
+  font-weight: 400;
+  margin-left: 2rem;
+}

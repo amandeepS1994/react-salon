@@ -1,0 +1,44 @@
+.booking-response-error {
+    font-size: x-large;
+    font-weight: 600;
+  }
+  
+  .booked-title {
+    font-size: xx-large;
+    font-weight: 600;
+  }
+  
+  .booked-service-title {
+    font-size: x-large;
+    font-weight: 500;
+    margin-top: -5px;
+  }
+  
+  .booked-service-description {
+    font-size: large;
+    font-weight: 400;
+    color: rgb(116, 116, 116);
+    margin-top: -10px;
+  }
+  
+  .salon-address-title {
+    font-size: larger;
+    font-weight: 600;
+  }
+  
+  .salon-address {
+    font-size: medium;
+    color: rgb(116, 116, 116);
+    margin-top: 4px;
+  }
+  
+  .booked-service-barcode-title {
+    font-size: x-large;
+    font-weight: 500;
+    margin-top: -5px;
+  }
+  
+  .booking-qr-code {
+      margin-top: 6rem;
+      height: 12rem;
+  }

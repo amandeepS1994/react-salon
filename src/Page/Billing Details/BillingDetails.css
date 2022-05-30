@@ -1,0 +1,16 @@
+
+  .billing-title {
+    font-size: x-large;
+  }
+  
+  .billing-label {
+    margin-top: 0.3rem;
+  }
+
+  .btn-payment {
+    height: 3rem;
+  }
+  
+  input {
+    text-align: left;
+  }
