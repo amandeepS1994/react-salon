@@ -1,7 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header';
-import { Home } from './Home';
 import { AppNotificationComponent } from '../Util/AppNotificationComponent';
 import { LoadingIndicator } from '../Util/LoadingIndicator';
 import { Salon } from './Salon';
@@ -25,12 +24,8 @@ function App() {
       </Col>
     </Row>
     <div className='app-body'>
-
     <Row>
-  
-          <Salon/>
-         
-      
+      <Salon/>
     </Row>
     </div> 
     </>

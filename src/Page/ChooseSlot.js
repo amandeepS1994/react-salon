@@ -20,7 +20,7 @@ function ValidateDate(date, today, setRequestedDate, setValidState) {
     }
 }
 
-function displayAvailableSlots (isValid, serviceName, requestedDate, availableSlots) {
+function displayAvailableSlots (isValid, serviceId, serviceName, requestedDate, availableSlots) {
     if (isValid && availableSlots.length > 0) {
             return (
                 <div className='service-slot'>
@@ -28,7 +28,7 @@ function displayAvailableSlots (isValid, serviceName, requestedDate, availableSl
                     <div className = "col-12">
                         <div className='row'>
                         {availableSlots.map((slot, key) => (
-                            <SlotItem key={slot.id} id = {slot?.id} slotFor = {slot?.slotFor} serviceName = {serviceName} status = {slot?.status} stylistName = {slot?.stylistName} />
+                            <SlotItem key={slot.id} slotId = {slot?.id} serviceId = {2} slotFor = {slot?.slotFor} serviceName = {serviceName} status = {slot?.status} stylistName = {slot?.stylistName} />
                         ))}
                         </div>
                     </div>
@@ -110,7 +110,7 @@ function ChooseSlot() {
             <div className='col-2'></div>
         </div>
         <div className='row'>
-            {displayAvailableSlots(isValid, serviceName, requestedDate, availableSlots)}
+            {displayAvailableSlots(isValid, serviceId, serviceName, requestedDate, availableSlots)}
         </div>
       </>
 
